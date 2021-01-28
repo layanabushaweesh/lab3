@@ -1,23 +1,30 @@
-var servicetype = prompt("what type of service do you want");
-var noofservices =prompt("how many service do you want to order");
 
-var rderdetalis;
-if (noofservices>=1 && noofservices<3){
-    orderdetalis="congrates you gain 20% discount";
+var servicetype=prompt ("how many service do you want to order");
+
+var order = prompt("what type of service do you want skin or nail");
+
+while ( order !== "skin" && order !== "nail"){
+
+    order = prompt("what type  of service do you want skin or nail");
 }
-else if (noofservices>3 &&  noofservices <=5){
-    orderdetalis="congrates you gain extra free service";
+
+var ordertype = "" ;
+if ( order === "skin") {
+
+    ordertype= '<img src ="skin.jpg" />' ;
+
+
+}else if (order === "nail"){
+
+    ordertype=  '<img src ="nails.jpg"/>' ;
 }
-else if (noofservices>5 && noofservices<=10){
-    orderdetalis="congrates you gain 50% discount";
+var result = "";
+for (var i = 0 ; i < servicetype ; i++){
+    result=result+ordertype;
 }
-else if ( noofservices>10){
-    orderdetalis="congrates you gain 50% discount with extra free service";
-}
-else {
-    orderdetalis="no discount";
-}
-document.write(orderdetalis);
+
+
 confirm("are you enjoying our services ");
 alert ("thank you and see you soon");
+document.write(result);
 document.getElementById("appointment").innerText=servicetype;
