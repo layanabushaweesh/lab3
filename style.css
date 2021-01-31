@@ -1,0 +1,48 @@
+
+
+* {
+    margin: 0;
+  }
+  /* element selector */
+  header nav {
+    list-style: none;
+  }
+  header nav li h1 {
+    display: inline-block;
+    padding: 80px;
+  }
+  header nav ul li {
+    color: #cc2271;
+    text-decoration: none;
+  }
+  /* id selector */
+  #home {
+    color: rgb(185, 40, 113);
+  }
+  
+  #contactus {
+color :rgb(206, 33, 62) ;
+  }
+  #royapage {
+    color: #cc2271;  
+  }
+  #frontend {
+    float: right;
+  }
+  /* class selector */
+  
+  .paraghraph {
+    
+    border: 2px purple solid;
+
+    padding: 20px ;
+    margin: 50px ;
+    color: purple;
+    text-align: center
+  
+  }
+  
+  main h1 {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+  }

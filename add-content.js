@@ -1,30 +1,24 @@
 
-var servicetype=prompt ("how many service do you want to order");
 
-var order = prompt("what type of service do you want skin or nail");
-
-while ( order !== "skin" && order !== "nail"){
-
-    order = prompt("what type  of service do you want skin or nail");
-}
-
-var ordertype = "" ;
-if ( order === "skin") {
-
-    ordertype= '<img src ="skin.jpg" />' ;
-
-
-}else if (order === "nail"){
-
-    ordertype=  '<img src ="nails.jpg"/>' ;
-}
-var result = "";
-for (var i = 0 ; i < servicetype ; i++){
-    result=result+ordertype;
-}
-
-
-confirm("are you enjoying our services ");
-alert ("thank you and see you soon");
-document.write(result);
-document.getElementById("appointment").innerText=servicetype;
+function getName() {
+    var serviceName = prompt('Enter your service ?');
+    console.log(typeof prompt);
+    console.log(serviceName);
+    for (var i = 0; i <= 5; i++) {
+      console.log(i);
+    }
+  }
+  
+  getName();
+ 
+  var getSum = function (a, b) {
+    var c = a + b;
+   
+    return c;
+  };
+  
+  var sum = getSum(10, 4);
+  alert(sum);
+  
+  document.write(sum);
+  
